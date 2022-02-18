@@ -4,71 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>FAQ Accordion Card</title>
-  
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <header>
-    <div class="image-container">
-      <img class="image-front"/>
-      <img class="image-back"/>
-    </div>
-
-    <h1>FAQ</h1>
-  </header>
-
   <main>
     <div class="container">
-      <div class="question">
-        <h3>How many team members can I invite?</h3>
-        <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon"/>
-      </div>
-      <div class="answer hide">
-        <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
-      </div>
-    </div>
+      <div class="image-container">
+        <img class="img-woman" src="images/illustration-woman-online-mobile.svg" alt="illustration with woman"/>
 
-    <div class="container">
-      <div class="question">
-        <h3>What is the maximum file upload size?</h3>
-        <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon"/>
+        <img class="img-diamond" src="images/bg-pattern-mobile.svg" alt="diamond shape"/>
       </div>
-      <div class="answer hide">
-        <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="question">
-        <h3>How do I reset my password?</h3>
-        <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon"/>
-      </div>
-      <div class="answer hide">
-        <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
-      </div>
-    </div>
+      <div class="faq-container">
+        <h1>FAQ</h1>
 
-    <div class="container">
-      <div class="question">
-        <h3>Can I cancel my subscription?</h3>
-        <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon"/>
-      </div>
-      <div class="answer hide">
-        <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-      </div>
-    </div>
-    
-    <div class="container">
-      <div class="question">
-        <h3>Do you provide additional support?</h3>
-        <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon"/>
-      </div>
-      <div class="answer hide">
-        <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        <div class="accordion">
+          <div class="question">
+            <h3>How many team members can I invite?</h3>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon"/>
+          </div>
+          <div class="answer hide">
+            <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="question">
+            <h3>What is the maximum file upload size?</h3>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon"/>
+          </div>
+          <div class="answer hide">
+            <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="question">
+            <h3>How do I reset my password?</h3>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon"/>
+          </div>
+          <div class="answer hide">
+            <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="question">
+            <h3>Can I cancel my subscription?</h3>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon"/>
+          </div>
+          <div class="answer hide">
+            <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </div>
+        </div>
+        
+        <div class="accordion">
+          <div class="question">
+            <h3>Do you provide additional support?</h3>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon"/>
+          </div>
+          <div class="answer hide">
+            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div>
+        </div>
       </div>
     </div>
   </main>
