@@ -57,9 +57,13 @@ main {
   top: -140px;
 }
 
-.img-diamond {
+.img-diamond-mobile {
   position: absolute;
   top: -20px;
+}
+
+.img-diamond-desktop {
+  display: none;
 }
 
 .faq-container {
@@ -68,6 +72,7 @@ main {
 
 .accordion {
   border-bottom: hsl(240, 5%, 91%) 1px solid;
+  width: 300px;
 }
 
 .question {
@@ -82,4 +87,52 @@ main {
 
 .hide {
   display: none;
+}
+
+/*****Desktop Styles*****/
+@media only screen and (min-width: 1200px) {
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 825px;
+  }
+
+  .image-container {
+    width: 420px;
+  }
+
+  .img-diamond-mobile {
+    display: none;
+  }
+  
+  .img-woman {
+    position: absolute;
+    top: -150px;
+    left: -125px;
+    width: 420px;
+  }
+
+  .img-diamond-desktop {
+    position: absolute;
+  }
+
+  .faq-container {
+    padding: 50px;
+  }
+
+  .accordion {
+    width: 375px;
+  }
+
+  h1 {
+    text-align: left;
+    margin: 0;
+    padding: 0 0 20px 0;
+  }
+
+  h3 {
+    margin-right: 50px;
+  }
+  
 }
