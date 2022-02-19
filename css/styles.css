@@ -101,20 +101,24 @@ main {
   .image-container {
     width: 420px;
   }
+  
+  .img-woman {
+    width: 420px;
+    position: absolute;
+    top: -150px;
+    left: -125px;
+  }
 
   .img-diamond-mobile {
     display: none;
   }
-  
-  .img-woman {
-    position: absolute;
-    top: -150px;
-    left: -125px;
-    width: 420px;
-  }
 
   .img-diamond-desktop {
+    display: inline;
+    width: 500px;
     position: absolute;
+    top: -240px;
+    left: -200px;
   }
 
   .faq-container {
