@@ -1,16 +1,16 @@
-const question = document.querySelector(".question");
+var accordion = document.getElementsByClassName("question");
+var i;
 const questionText = document.querySelector("h3");
-const answer = document.querySelector(".answer");
-const arrow = document.querySelector(".arrow");
 
-question.addEventListener("click", function () {
-    if (answer.classList.contains("hide")) {
-        answer.classList.remove("hide");
-        questionText.style.fontWeight = 700;
-        arrow.style.transform = "rotate(180deg)";
-    } else {
-        answer.classList.add("hide");
-        questionText.style.fontWeight=400;
-        arrow.style.transform = "rotate(0deg)";
-    };
-});
+for (i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+
+        var answer = this.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    });
+}

@@ -72,21 +72,26 @@ main {
 
 .accordion {
   border-bottom: hsl(240, 5%, 91%) 1px solid;
-  width: 300px;
+  width: 310px;
 }
 
-.question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.arrow {
-  transform: rotate(90);
-}
-
-.hide {
+.answer {
   display: none;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.question:after {
+  content: url("../images/icon-arrow-down.svg");
+  float: right;
+}
+
+.active:after {
+  content: url("../images/icon-arrow-down.svg");
+  display: inline-block;
+  transform: rotate(180deg);
 }
 
 /*****Desktop Styles*****/
