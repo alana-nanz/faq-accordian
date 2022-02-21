@@ -1,6 +1,6 @@
 html {
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   height: 100%;
 }
 
@@ -18,7 +18,7 @@ h1 {
   margin: 10px;
 }
 
-h3 {
+p .question {
   color: #56555d;
   font-weight: 400;
   margin-right: 25px;
@@ -83,6 +83,11 @@ main {
   font-weight: 700;
 }
 
+.question:hover {
+  color: orangered;
+  cursor: pointer;
+}
+
 .question:after {
   content: url("../images/icon-arrow-down.svg");
   float: right;
@@ -140,7 +145,7 @@ main {
     padding: 0 0 20px 0;
   }
 
-  h3 {
+  p .question {
     margin-right: 50px;
   }
   
